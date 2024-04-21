@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Zoo</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="page">
+        <div class="container">
+          <div class="instance-animals">
+            <div class="instance-animals__animal animal">
+              <div class="animal__img-container">
+                <img class="animal__img" src="./src/images/tiger.jpg" alt="tiger" />
+              </div>
+              <div class="animal__info">
+                <input animal-info="tiger-name" class="animal__input animal-name" type="text" placeholder="name" />
+                <input animal-info="tiger-age" class="animal__input animal-age" type="text" placeholder="age" />
+                <button animal-info="tiger" class="animal__button button">add</button>
+              </div>
+            </div>
+            <div class="instance-animals__animal animal">
+              <div class="animal__img-container">
+                <img class="animal__img" src="./src/images/shark.jpg" alt="shark" />
+              </div>
+              <div class="animal__info">
+                <input animal-info="shark-name" class="animal__input" type="text" placeholder="name" />
+                <input animal-info="shark-age" type="text" placeholder="age" />
+                <button animal-info="shark" class="animal__button button">add</button>
+              </div>
+            </div>
+            <div class="instance-animals__animal animal">
+              <div class="animal__img-container">
+                <img class="animal__img" src="./src/images/cacadu.jpg" alt="parrot" />
+              </div>
+              <div class="animal__info">
+                <input animal-info="parrot-name" class="animal__input" type="text" placeholder="name" />
+                <input animal-info="parrot-age" type="text" placeholder="age" />
+                <button animal-info="parrot" class="animal__button button">add</button>
+              </div>
+            </div>
+          </div>
+          <div class="zoo-information">
+            <div class="zoo-information__food-expenses">
+              food expenses:
+              <span id="food-expenses"></span>
+            </div>
+            <div class="zoo-information__area-square">
+              area square:
+              <span id="area-square"></span>
+            </div>
+            <div class="zoo-information__area-rent">
+              area rent:
+              <span id="area-rent"></span>
+            </div>
+          </div>
+          <div class="selected-animals"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
